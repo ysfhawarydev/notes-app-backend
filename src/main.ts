@@ -8,7 +8,7 @@ async function bootstrap() {
   });
   app.useGlobalPipes(new ValidationPipe());
   app.enableCors({
-    origin: 'http://localhost:3000',
+    origin: 'https://notes.ysfhawary.dev',
   });
   await app.listen(process.env.PORT ?? 5000, '0.0.0.0');
 }
